@@ -1,0 +1,97 @@
+html, body {
+    height: 100%;
+    margin: 5px, 5px;
+}
+
+body {
+    background: linear-gradient( rgb(205, 237, 241),rgb(89, 161, 177));
+    background-attachment: fixed;
+    background-size: cover;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.top-bar {
+    background: rgba(255, 255, 255, 0.2); 
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    margin-top: 90px;
+    text-align: center;
+    padding: 20px;
+}
+
+.about {
+    width: 60%;
+    max-width: 800px;
+}
+
+.about-content-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.social-icon, .bio-link {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin: 0 15px;
+    background-color: transparent;
+    border: 2px solid rgba(201, 240, 255, 0.8);
+    border-radius: 15px; 
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.bio-link {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+}
+
+.github {
+    background-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.openprocessing {
+    background-image: url('	https://openprocessing.org/assets/img/logo/logo_36x30_color@2x.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.p5js {
+    background-image: url('https://p5js.org/favicon.ico?');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.youtube {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.social-icon:hover, .bio-link:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px rgba(106, 183, 214, 0.8);
+}
