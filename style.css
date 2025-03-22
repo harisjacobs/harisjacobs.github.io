@@ -1,6 +1,7 @@
 html, body {
     height: 100%;
     margin: 5px, 5px;
+    font-size: 110%;
 }
 
 body {
