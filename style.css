@@ -11,6 +11,11 @@ body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.link-without-blue {
+    text-decoration: none;
+    color: inherit;
+}
+
 .top-bar {
     background: rgba(255, 255, 255, 0.2); 
     padding: 15px;
@@ -79,8 +84,7 @@ body {
 }
 
 .p5js {
-    background-image: url('https://p5js.org/favicon.ico?');
-    background-size: contain;
+    background-image: url('https://replit.com/cdn-cgi/image/width=128,quality=80,format=auto/https://storage.googleapis.com/replit/images/1654213125936_1520642e4003d6b91560fd1f966afcee.png');    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -92,7 +96,75 @@ body {
     background-repeat: no-repeat;
 }
 
+.musescore {
+    background-image: url('https://musescore.com/static/public/musescore/img/product_icons/apple-touch-icon-192x192-precomposed_ver1742569928.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .social-icon:hover, .bio-link:hover {
     transform: scale(1.2);
     box-shadow: 0 0 20px rgba(106, 183, 214, 0.8);
+}
+
+.project-grid-wrapper {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project-card a {
+    text-decoration: none;
+    display: block;
+}
+
+.project-grid :hover {
+    transform: scale(1.1);
+}
+
+.project-card h2 {
+    margin-top: 10px;
+    font-size: 22px;
+    color: white;
+}
+
+.project-card .year {
+    font-size: 16px;
+    color: #111;
+}
+
+.project-card .description {
+    font-size: 14px;
+    color: #444;
+    margin-top: 10px;
 }
