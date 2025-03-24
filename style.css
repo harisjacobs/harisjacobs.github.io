@@ -1,6 +1,6 @@
 html, body {
     height: 100%;
-    margin: 5px, 5px;
+    margin: 5px 5px;
     font-size: 110%;
 }
 
@@ -77,7 +77,7 @@ body {
 }
 
 .openprocessing {
-    background-image: url('	https://openprocessing.org/assets/img/logo/logo_36x30_color@2x.png');
+    background-image: url('https://openprocessing.org/assets/img/logo/logo_36x30_color@2x.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -149,7 +149,7 @@ body {
     display: block;
 }
 
-.project-grid :hover {
+.project-card:hover {
     transform: scale(1.1);
 }
 
@@ -168,4 +168,66 @@ body {
     font-size: 14px;
     color: #444;
     margin-top: 10px;
+}
+
+
+.project-container {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    /*max-width: 800px;*/
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+}
+
+.project-container h1 {
+    font-size: 28px;
+    color: white;
+}
+
+.project-container .year {
+    font-size: 18px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.project-container .description {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.project-frame {
+    width: 100%;
+    /*min-height: 500px;*/
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    
+}
+
+.canvas-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px; /* Adjust this value to your preferred max width */
+    height: auto;
+    max-height: 600px; /* Adjust this to set a height limit */
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto; /* Centers the container */
+}
+
+/* Ensures the p5.js canvas scales down while maintaining aspect ratio */
+.canvas {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
 }
